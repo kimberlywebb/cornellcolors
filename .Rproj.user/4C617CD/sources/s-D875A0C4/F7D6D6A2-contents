@@ -18,7 +18,7 @@ cornell_palettes <- list(
 
 #' Cornell colors palette generator.
 #'
-#' @param n_colors Number of colors desired. Most palettes have 3-5 colors. Most color
+#' @param n Number of colors desired. Most palettes have 3-5 colors. Most color
 #'   schemes are derived from \href{https://brand.cornell.edu/design-center/colors/}.
 #'   If omitted, uses all colors.
 #' @param palette_name Name of desired palette. Choices are:
@@ -30,21 +30,21 @@ cornell_palettes <- list(
 #' @examples
 #' render_cornell_colors("classic")
 #' render_cornell_colors("malott", 3)
-render_cornell_colors <- function(palette_name, n_colors) {
+render_cornell_colors <- function(palette_name, n) {
 
   palette <- cornell_palettes[[palette_name]]
   if (is.null(palette))
     stop("Palette not found.")
 
-  if (missing(n_colors)) {
-    n_colors <- length(palette)
+  if (missing(n)) {
+    n <- length(palette)
   }
 
-  if (n_colors > length(palette)) {
+  if (n > length(palette)) {
     stop("Number of colors requested is larger than the chosen palette can provide.")
   }
 
-  out <- palette[1:n_colors]
+  out <- palette[1:n]
 
   structure(out, class = "palette", name = palette_name)
 }

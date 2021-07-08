@@ -4,14 +4,14 @@
 \alias{render_cornell_colors}
 \title{Cornell colors palette generator.}
 \usage{
-render_cornell_colors(palette_name, n_colors)
+render_cornell_colors(palette_name, n)
 }
 \arguments{
 \item{palette_name}{Name of desired palette. Choices are:
 \code{classic}, \code{secondary}, \code{accents}, \code{malott}, \code{brb}
 @importFrom graphics rgb rect par image text}
 
-\item{n_colors}{Number of colors desired. Most palettes have 3-5 colors. Most color
+\item{n}{Number of colors desired. Most palettes have 3-5 colors. Most color
 schemes are derived from \href{https://brand.cornell.edu/design-center/colors/}.
 If omitted, uses all colors.}
 }
