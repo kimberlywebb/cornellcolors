@@ -2,12 +2,12 @@
 % Please edit documentation in R/cornell_colors.R
 \name{render_cornell_colors}
 \alias{render_cornell_colors}
-\title{Cornell colors palette generator.}
+\title{Cornell colors palette rendering}
 \usage{
-render_cornell_colors(palette_name, n)
+render_cornell_colors(name, n)
 }
 \arguments{
-\item{palette_name}{Name of desired palette. Choices are:
+\item{name}{Name of color palette. Choices are:
 \code{classic}, \code{secondary}, \code{accents}, \code{malott}, \code{brb}}
 
 \item{n}{Number of colors desired. Most palettes have 3-5 colors. Most color
@@ -18,7 +18,7 @@ If omitted, uses all colors.}
 A vector of colors.
 }
 \description{
-Cornell colors palette generator.
+Cornell colors palette rendering
 }
 \examples{
 render_cornell_colors("classic")

@@ -5,7 +5,7 @@
 
 
 #' List of color palettes.
-
+#'
 #' Use \code{\link{render_cornell_colors}} to construct palettes of desired length.
 #'
 #' @export
@@ -17,12 +17,12 @@ cornell_palettes <- list(
   brb = c("#AD6556", "#7B7B80", "#F1BA47", "#BCC0C4", "#9B5113")
 )
 
-#' Cornell colors palette generator.
+#' Cornell colors palette rendering
 #'
 #' @param n Number of colors desired. Most palettes have 3-5 colors. Most color
 #'   schemes are derived from \href{https://brand.cornell.edu/design-center/colors/}.
 #'   If omitted, uses all colors.
-#' @param palette_name Name of desired palette. Choices are:
+#' @param name Name of color palette. Choices are:
 #'   \code{classic}, \code{secondary}, \code{accents}, \code{malott}, \code{brb}
 #' @importFrom graphics rgb rect par image text
 #' @return A vector of colors.
@@ -31,23 +31,23 @@ cornell_palettes <- list(
 #' @examples
 #' render_cornell_colors("classic")
 #' render_cornell_colors("malott", 3)
-render_cornell_colors <- function(palette_name, n) {
+render_cornell_colors <- function(name, n) {
 
-  palette <- cornell_palettes[[palette_name]]
-  if (is.null(palette))
+  pal <- cornell_palettes[[name]]
+  if (is.null(pal))
     stop("Palette not found.")
 
   if (missing(n)) {
-    n <- length(palette)
+    n <- length(pal)
   }
 
-  if (n > length(palette)) {
+  if (n > length(pal)) {
     stop("Number of colors requested is larger than the chosen palette can provide.")
   }
 
-  out <- palette[1:n]
+  out <- pal[1:n]
 
-  structure(out, class = "palette", name = palette_name)
+  structure(out, class = "palette", name = name)
 }
 
 

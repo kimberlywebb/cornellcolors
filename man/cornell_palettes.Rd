@@ -3,8 +3,7 @@
 \docType{data}
 \name{cornell_palettes}
 \alias{cornell_palettes}
-\title{List of color palettes.
-Use \code{\link{render_cornell_colors}} to construct palettes of desired length.}
+\title{List of color palettes.}
 \format{
 An object of class \code{list} of length 5.
 }
@@ -12,7 +11,6 @@ An object of class \code{list} of length 5.
 cornell_palettes
 }
 \description{
-List of color palettes.
 Use \code{\link{render_cornell_colors}} to construct palettes of desired length.
 }
 \keyword{datasets}
