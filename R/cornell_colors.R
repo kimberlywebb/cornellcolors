@@ -24,7 +24,8 @@ cornell_palettes <- list(
 #'   If omitted, uses all colors.
 #' @param name Name of color palette. Choices are:
 #'   \code{classic}, \code{secondary}, \code{accents}, \code{malott}, \code{brb}
-#' @importFrom graphics rgb rect par image text
+#' @importFrom graphics rect par image text
+#' @importFrom grDevices rgb
 #' @return A vector of colors.
 #' @export
 #' @keywords colors
