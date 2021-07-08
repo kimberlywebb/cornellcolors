@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+
+importFrom("grDevices", "rgb")
+importFrom("graphics", "image", "par", "rect", "text")
