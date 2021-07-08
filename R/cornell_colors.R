@@ -3,7 +3,8 @@
 # Source code: https://github.com/ciannabp/inauguration
 # Please find the copyright description from Cianna Bedford-Peterson's R package at the end of this file.
 
-# List of color palettes.
+
+#' List of color palettes.
 
 #' Use \code{\link{render_cornell_colors}} to construct palettes of desired length.
 #'
@@ -23,7 +24,7 @@ cornell_palettes <- list(
 #'   If omitted, uses all colors.
 #' @param palette_name Name of desired palette. Choices are:
 #'   \code{classic}, \code{secondary}, \code{accents}, \code{malott}, \code{brb}
-#'   @importFrom graphics rgb rect par image text
+#' @importFrom graphics rgb rect par image text
 #' @return A vector of colors.
 #' @export
 #' @keywords colors
@@ -48,6 +49,7 @@ render_cornell_colors <- function(palette_name, n) {
 
   structure(out, class = "palette", name = palette_name)
 }
+
 
 #' @export
 #' @importFrom graphics rect par image text
