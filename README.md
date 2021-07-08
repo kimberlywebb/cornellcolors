@@ -33,3 +33,10 @@ View a subset of the color scheme inspired by Malott Hall
 render_cornell_colors("malott", 3)
 ```
 ![](malott_3.png)
+
+Use colors from `cornell_palettes` in your graphs
+```r
+set.seed(1)
+hist(rnorm(n = 100, mean = 0, sd = 1), col = cornell_palettes[["classic"]][1])
+```
+![](carnellian_histogram.png)
