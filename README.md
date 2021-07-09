@@ -1,5 +1,6 @@
 # cornellcolors
-Contains code for R package with R color palettes inspired by Cornell University
+Contains code for R package with R color palettes inspired by Cornell University.
+Code adopted from the lovely `inauguration` R package by Cianna Bedford-Petersen, available [here](https://github.com/ciannabp/inauguration). 
 
 # R package installation
 Install the  `cornellcolors` R package using the following code:
