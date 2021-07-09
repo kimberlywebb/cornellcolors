@@ -39,4 +39,4 @@ Use colors from `cornell_palettes` in your graphs
 set.seed(1)
 hist(rnorm(n = 100, mean = 0, sd = 1), col = cornell_palettes[["classic"]][1])
 ```
-![](carnellian_histogram.png)
+![](carnelian_histogram.png)
