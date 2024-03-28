@@ -6,7 +6,7 @@ Code adopted from the lovely `inauguration` R package by Cianna Bedford-Petersen
 Install the  `cornellcolors` R package using the following code:
 ``` r
 #install.packages("devtools")
-devtools::install_github("kimhochstedler/cornellcolors", ref="main")
+devtools::install_github("kimberlywebb/cornellcolors", ref="main")
 library(cornellcolors)
 ```
 
